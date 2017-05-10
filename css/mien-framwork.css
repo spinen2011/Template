@@ -1,0 +1,40 @@
+*{
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+@media (max-width: 767px){
+    .container{
+    width: 780px;
+    padding: 0 30px;
+    }
+}
+@media (min-width: 768px){
+    .container{
+    width: 780;
+    padding: 0 30px;
+    }
+}
+@media (max-width: 992px){
+    .container{
+    width: 1100;
+    padding: 0 30px;
+    }
+}
+@media (max-width: 1200px){
+    .container{
+    width: 1170px;
+    padding: 0 30px;
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+header .text{
+    width: 50%;
+    
+}

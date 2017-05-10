@@ -1,0 +1,403 @@
+ /*start of Global */
+* {
+    box-sizing: border-box;
+    
+}
+
+/*end of Global */
+
+/*=================Start of Body=================*/
+
+body {
+    background-color: #FFF;
+    
+}
+
+.container{
+    width: 90%;/* == the contianer must be in px to save the other elements behevior ==*/
+    /*height: 1000px;*/ /* will be removed */
+    margin: 0 auto;
+    /*background-color: #fff;*/
+}   
+
+.fl-left{float: left}
+
+.fl-right{float: right}
+
+ul,li{
+    list-style: none;
+    padding-left: 0
+}
+
+.button{
+    text-align: center;
+    border: 1px solid #666a70;
+    border-radius: 20px;
+    width: 48%;
+    height: 50px;
+    line-height: 0.2;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 1%;
+    -webkit-transition: all 0.5 ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.button:hover{
+    background-color: #f7600e
+}
+
+span{color: #f7600e }
+/*=================Start of Body=================*/
+
+/*=================Start of Header=================*/
+header{min-height: 600px}
+
+.overlay{
+    background: #000;
+    opacity: .8;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header .overlay{min-height: 600px}
+
+.header-img{
+   z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.header-img>img{width: 100%; height: 600px}
+
+nav, .slider{
+    z-index: 2;
+    overflow: hidden;
+    position: relative;   
+}
+
+nav .logo {
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff
+}
+
+nav .icon logo{text-transform: capitalize; color: #f7600e;}
+
+nav .menu-button{
+    background-color: transparent;
+    border: none;
+    margin: 22px auto;
+    font-size: 2vw;
+    color: #fff
+}
+
+
+
+nav .dropmenu{display: none}
+
+nav .dropmenu ul li a{color: #fff}
+/*===========Start of slider===========*/
+.slider{
+    width: 70%;
+    margin: 0 15%;
+    text-align: center;
+    position: relative;
+    top: 150px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.slider span{color: #f7600e;margin-top: 25px}
+
+.slider .header-butt{
+    text-align: center;
+    overflow: hidden;
+    margin-left: 33.333%;
+    margin-top: 50px;
+    width: 33.3333%;
+}
+
+.down{
+    border: #fff;
+    border-radius: 50%;
+    width: 5%;
+    position: relative;
+    margin: auto;
+    bottom: -254px;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.down:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2)
+}
+/*===========end of slider===========*/
+
+
+/*=================End of Header=================*/
+
+/*===========End of abotme===========*/
+/*===========Start of Skills===========*/
+.icns{overflow: hidden}
+
+.icns .container>div{
+    float: left;
+    width: 25%
+}
+
+.icon{
+    text-align: center;
+    line-height: 7.5;
+    position: relative;
+    top: 12px;
+    left: 33.3333%;
+    width: 35%;
+    height: 100px;
+    border: 1px solid #666a70;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.icon .fa{
+    color: #f7600e;
+    padding: 1%;
+    width: 100%
+}
+
+
+.descrip{text-align: center;color: #3b434c}
+/*===========End of Skills===========*/
+/*===========Start of Subscribe===========*/
+.subscribe{
+    background-image: url(../imgs/tablet-791051.jpg);
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    overflow: hidden;
+}
+
+.subscribe .overlay{height: 100%;z-index: 0}
+
+.subscribe .bar,.subscribe .button{z-index: 1}
+
+.subscribe .container{
+    margin-top: 64px;
+    position: relative;
+}
+
+.subscribe .bar{
+    width: 54%;
+    margin-left: 12%;
+}
+
+.subscribe .bar input{
+    width: 100%;
+    padding-top: 0px;
+    margin-top: 21px;
+    border: 1px soild #333;
+    border-radius: 20px;
+    height: 40px;
+}
+
+.subscribe .button{width: 25%;line-height: 3.1}
+/*===========End of Subscribe===========*/
+/*===========Start of images===========*/
+.imgs{
+    margin-top: 1%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.images .imgs>div{
+    width: 31.33333%;
+    float: left;
+    position: relative
+}
+
+.images .imgs>div:nth-child(even){margin:0 1%}
+
+.images .imgs img{
+    width: 100%;
+    border-radius: 25px;
+    box-shadow:1px 2px #ddd;
+} 
+
+.imgs .overlay{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #f7600e;
+    
+}
+
+.imgs>div:hover .overlay{display: block;z-index: 2}
+
+.show-more{
+    text-align: center;
+}
+
+.show-more .button{
+    width: 33.333%;
+    line-height: 3;
+    color: #000;
+    margin-left: 33.3333%;
+}
+
+/*===========End of images===========*/
+/*===========Start of testi===========*/
+.testi{
+    background-image: url(../imgs/woman-690036.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 250px;
+}
+
+.testi .overlay{z-index: 0; position: absolute; height: 100%}
+
+.testi .container{z-index: 1}
+
+.testi .fa-chevron-right, .fa-chevron-left{
+    position: absolute;
+    top: 100px;
+    
+}
+
+.testi .active{color: #999}
+
+.testi .inactive{color: #999}
+
+.testi .fa-chevron-right{right: 10%}
+
+.testi .fa-chevron-right:hover,
+.testi .fa-chevron-left:hover{
+    color: #f7600e;
+    cursor: pointer;
+ }
+
+.testi .fa-chevron-left{left: 10%}
+
+.testi .client{
+    text-align: center;
+    line-height: 2;
+    position: absolute;
+    left: 220px;
+    padding-top: 40px;
+    color: #fff;
+    display: none
+}
+
+.testi .selected{
+    display: block;
+    
+    
+        
+}
+
+.testi .hidden{
+    display: none;
+    position: absolute;
+    left: 1500px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+        
+}
+
+.testi .avatar{
+    width: 7%;
+    left: 47%;
+    position: relative
+}
+
+.testi .avatar img{width: 100%}
+
+.testi .client p{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.2vw;
+    font-style: italic;
+    line-height: 2
+}
+
+.testi .client h4{font-style: italic}
+/*===========End of testi===========*/
+.ourwork{
+    text-align: center;
+}
+
+
+
+
+/*===========start of images===========*/
+.client-img{width: 80%; margin: auto; overflow: hidden}
+
+.client-img .container>div{
+    width: 23%; 
+    text-align: center;
+    margin: 1%;
+}
+
+.client-img .cl-img{height: 220px}
+
+.client-img .cl-img img{
+    width: 100%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-filter: grey;
+    filter: grey;
+    border-radius: 5px;
+    height: 100%
+}
+
+.client-img .container>div:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    border-radius: 2%;
+    color: #777;
+}
+
+
+.client-img .container>div:hover img{
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-filter: none;
+    filter: none;
+    cursor: pointer;
+}
+
+/*===========End of images===========*/
+/*===========Start of portofolio===========*/
+
+
+/*===========End of portofolio===========*/
+/*===========Start of portofolio img===========*/
+
+/*===========End of portofolio img===========*/
+
+/*=================End of Main=================*/
+
+/*=================Start of Footer=================*/
+/*===========Start of Footer===========*/
+
+
+/*===========end of Footer===========*/
+
+/*=================End of Footer=================*/
+
+
+
